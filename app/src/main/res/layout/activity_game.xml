@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_weight="1"
@@ -12,12 +13,12 @@
         android:layout_height="match_parent"
         android:layout_weight="1">
 
-        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        <RelativeLayout
             android:id="@+id/rl_main"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
-            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="vertical">
@@ -52,7 +53,7 @@
                         android:gravity="center_vertical"
                         android:paddingLeft="10dp"
                         android:paddingRight="10dp"
-                        android:text="Level"
+                        android:text="Nivel"
                         android:textColor="@color/navy"
                         android:textSize="@dimen/button_text" />
 
@@ -135,18 +136,16 @@
                                 android:padding="5dp"
                                 android:src="@drawable/ic_ad" />
 
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_gravity="center"
-                                android:background="@drawable/background_text"
-                                android:fontFamily="@font/roboto_bold"
-                                android:gravity="center"
-                                android:paddingLeft="7dp"
-                                android:paddingRight="7dp"
-                                android:text="Ad"
-                                android:textColor="@color/white"
-                                android:textSize="@dimen/button_text" />
+                            <ImageView
+                                android:id="@+id/imageView"
+                                android:layout_width="70dp"
+                                android:layout_height="35dp"
+                                android:background="@drawable/admoney"
+                                android:paddingLeft="0dp"
+                                android:paddingTop="5dp"
+                                android:paddingRight="5dp"
+                                android:paddingBottom="5dp" />
+
                         </LinearLayout>
 
                         <LinearLayout
@@ -156,7 +155,7 @@
                             android:layout_alignParentRight="true"
                             android:layout_marginRight="7dp"
                             android:orientation="vertical">
-                          <!--  <RelativeLayout
+                            <!--  <RelativeLayout
                             android:id="@+id/dollar"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content">
@@ -210,12 +209,12 @@
                                     android:layout_gravity="center_vertical"
                                     android:layout_marginLeft="@dimen/margin_dollar"
                                     android:layout_marginRight="@dimen/button_s"
-                                    android:background="@drawable/bg_hint"
+                                    android:background="@drawable/background_text"
                                     android:fontFamily="@font/roboto_bold"
                                     android:paddingLeft="5dp"
                                     android:paddingRight="7dp"
                                     android:text="100"
-                                    android:textColor="@color/white" />
+                                    android:textColor="#EEC60B" />
 
                                 <ImageView
                                     android:layout_width="@dimen/button_dollar"
@@ -232,7 +231,7 @@
                             </FrameLayout>
 
                             <LinearLayout
-                                android:layout_width="@dimen/button"
+                                android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="right"
                                 android:gravity="center"
@@ -240,7 +239,7 @@
 
                                 <TextView
                                     android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
+                                    android:layout_height="match_parent"
                                     android:layout_gravity="center"
                                     android:background="@drawable/background_text"
                                     android:fontFamily="@font/roboto_bold"
@@ -248,7 +247,7 @@
                                     android:paddingLeft="7dp"
                                     android:paddingRight="7dp"
                                     android:singleLine="true"
-                                    android:text="Hint"
+                                    android:text="Indiciu"
                                     android:textColor="@color/white"
                                     android:textSize="@dimen/button_text" />
                             </LinearLayout>
@@ -275,19 +274,6 @@
                             android:layout_marginBottom="7dp"
                             android:orientation="vertical">
 
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_gravity="center"
-                                android:background="@drawable/background_text"
-                                android:fontFamily="@font/roboto_bold"
-                                android:gravity="center"
-                                android:paddingLeft="7dp"
-                                android:paddingRight="7dp"
-                                android:text="Rate"
-                                android:textColor="@color/white"
-                                android:textSize="@dimen/button_text" />
-
                             <ImageView
                                 android:layout_width="@dimen/button"
                                 android:layout_height="@dimen/button"
@@ -295,16 +281,19 @@
                                 android:src="@drawable/ic_rate" />
 
                         </LinearLayout>
+
                         <LinearLayout
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_centerInParent="true">
-                        <com.games.wordfun.view.CircularLayout
-                            android:id="@+id/circular_layout"
-                            android:layout_width="@dimen/radius"
-                            android:layout_height="@dimen/radius"
-                            android:background="@drawable/bg_circle" />
+
+                            <com.games.wordfun.view.CircularLayout
+                                android:id="@+id/circular_layout"
+                                android:layout_width="@dimen/radius"
+                                android:layout_height="@dimen/radius"
+                                android:background="@drawable/bg_circle" />
                         </LinearLayout>
+
                         <LinearLayout
                             android:id="@+id/btn_shuffle"
                             android:layout_width="wrap_content"
@@ -314,19 +303,6 @@
                             android:layout_marginRight="7dp"
                             android:layout_marginBottom="7dp"
                             android:orientation="vertical">
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_gravity="center"
-                                android:background="@drawable/background_text"
-                                android:fontFamily="@font/roboto_bold"
-                                android:gravity="center"
-                                android:paddingLeft="7dp"
-                                android:paddingRight="7dp"
-                                android:text="Reset"
-                                android:textColor="@color/white"
-                                android:textSize="@dimen/button_text" />
 
                             <ImageView
                                 android:layout_width="@dimen/button"

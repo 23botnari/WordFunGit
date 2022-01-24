@@ -726,8 +726,8 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
 
                 if (lvl > WApp.getDataStorage().getSetting_Level()) {
                     WApp.getDataStorage().setSetting_Level(lvl);
-                    WApp.getDataStorage().setCredit(WApp.getDataStorage().getCredit() + 50);
-                    new increaseCredits().execute(50);
+                    WApp.getDataStorage().setCredit(WApp.getDataStorage().getCredit() + 20);
+                    new increaseCredits().execute(20);
                 }
 
                 gen_words.clear();
@@ -775,8 +775,8 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                             } else {
                                 stopMusic();
                             }
-                            WApp.getDataStorage().setCredit(WApp.getDataStorage().getCredit() + 100);
-                            new increaseCredits().execute(100);
+                            WApp.getDataStorage().setCredit(WApp.getDataStorage().getCredit() + 50);
+                            new increaseCredits().execute(50);
 
                             Log.d("TAG", "The ad was dismissed.");
                             adMobLoad();

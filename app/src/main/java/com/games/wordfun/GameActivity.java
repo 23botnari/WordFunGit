@@ -546,13 +546,13 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
     public static void textmatcher(final Context context, String s) {
         String w = s;
         if (already.contains(w)) {
-            Toast.makeText(context, "Word already exist.\n Please try another.", Toast.LENGTH_SHORT).show();
+            Toast.makeText(context, "Ai rezolvat deja acest cuvânt!", Toast.LENGTH_SHORT).show();
         } else {
-            for (int i = 0; i < gen_words.size(); i++) {
                 if (!gen_words.contains(w)) {
                     type = 1;
-                    Toast.makeText(context, "Selected word is wrong\nPlease try another word.", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(context, "Cuvânt greșit, Mai încearcă!", Toast.LENGTH_SHORT).show();
                 }
+                for (int i = 0; i < gen_words.size(); i++) {
                 if (gen_words.get(i).equalsIgnoreCase(w)) {
                     if (type == 0) {
                         showPopup(i);

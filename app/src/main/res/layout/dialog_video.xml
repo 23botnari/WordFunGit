@@ -146,11 +146,11 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_weight="0.5"
-                            android:textSize="42sp"
-                            android:textColor="@color/white"
-                            android:gravity="center"
                             android:fontFamily="@font/baloo_chettan"
-                            android:text="Watch Ad"/>
+                            android:gravity="center"
+                            android:text="Videoclip"
+                            android:textColor="@color/white"
+                            android:textSize="42sp" />
 
                         <View
                             android:layout_width="match_parent"
@@ -184,7 +184,7 @@
                                 android:layout_weight="0.5"
                                 android:fontFamily="@font/roboto_bold"
                                 android:gravity="center"
-                                android:text="Watch a Ad to get 100 free coins"
+                                android:text="Vezi un video pentru a primi 50 Monede"
                                 android:textColor="@color/txt_orange"
                                 android:textSize="20dp" />
 

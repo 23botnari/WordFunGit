@@ -36,7 +36,7 @@
                     android:layout_weight="1" />
 
                 <ImageView
-                    android:layout_width="match_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="0.7"
                     android:adjustViewBounds="true"
@@ -170,7 +170,7 @@
                                 android:layout_weight="0.5"
                                 android:fontFamily="@font/roboto_bold"
                                 android:gravity="center"
-                                android:text="Watch a Video to get 100 free coins"
+                                android:text="Vezi un video pentru a primi 50 Monede"
                                 android:textColor="@color/txt_orange"
                                 android:textSize="20dp" />
 

@@ -351,8 +351,8 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                     }
                 }
                 Intent emailIntent = new Intent(Intent.ACTION_SENDTO, Uri.fromParts(
-                        "mailto", "contact__@gmail.com", null));
-                emailIntent.putExtra(android.content.Intent.EXTRA_SUBJECT, "Word Fun");
+                        "mailto", "studitappsstudio@gmail.com", null));
+                emailIntent.putExtra(android.content.Intent.EXTRA_SUBJECT, "WordFun - Joc De Cuvinte");
 
                 try {
                     startActivity(Intent.createChooser(emailIntent, "Send mail..."));
@@ -677,7 +677,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
         sb_win.setEnabled(false);
         TextView txt_chptr_win = (TextView) dialog.findViewById(R.id.txt_chptr_win);
 
-        txt_chptr_win.setText(String.format("LEVEL %d/50", WApp.getDataStorage().getLevelCount() + 1));
+        txt_chptr_win.setText(String.format("NIVEL %d/50", WApp.getDataStorage().getLevelCount() + 1));
         sb_win.setProgress(WApp.getDataStorage().getLevelCount() + 1);
         final KonfettiView viewKonfetti = (KonfettiView) dialog.findViewById(R.id.viewKonfetti);
 
@@ -864,7 +864,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
 
     @Override
     public void onPause() {
-        Log.e("Pause ", "music stopped");
+        Log.e("Pause ", "Muzica a fost oprita.");
 
         if (mediaPlayer != null) {
             mediaPlayer.release();
@@ -879,7 +879,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
     public void onDestroy() {
         super.onDestroy();
 
-        Log.e("Destroy ", "music stopped");
+        Log.e("Destroy ", "Muzica a fost oprita.");
 //        stopMusic();
     }
 
@@ -905,11 +905,11 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
         Animation animation = AnimationUtils.loadAnimation(context, R.anim.popup);
         img_popup.setAnimation(animation);
 
-        stopMusic();
+        //stopMusic();
 
         if (WApp.getDataStorage().getSound()) {
             if (mediaPlayer2 != null) {
-                mediaPlayer2.start();
+             //  mediaPlayer2.start();
             }
         }
 
@@ -934,7 +934,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                 mediaPlayer = MediaPlayer.create(context, R.raw.background);
 
                 if (WApp.getDataStorage().getMusic()) {
-                    playMusic();
+                    //playMusic();
                 } else {
                     stopMusic();
                 }

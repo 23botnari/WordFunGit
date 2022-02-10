@@ -37,8 +37,8 @@
                     android:layout_weight="1" />
 
                 <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_width="500dp"
+                    android:layout_height="70dp"
                     android:layout_weight="0.7"
                     android:adjustViewBounds="true"
                     android:src="@drawable/lbl_level" />
@@ -127,7 +127,7 @@
                             android:layout_marginBottom="10dp"
                             android:fontFamily="@font/roboto_bold"
                             android:gravity="center"
-                            android:text="Chapter"
+                            android:text="NIVEL"
                             android:textAllCaps="true"
                             android:textColor="@color/txt_orange"
                             android:textSize="18dp" />

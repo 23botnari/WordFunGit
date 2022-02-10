@@ -1,7 +1,7 @@
 [
   {
     "level_id": 1,
-    "phrase": "clraae",
+    "phrase": "clra",
     "word1": "cal",
     "word2": "clar",
     "word3": "",
@@ -9,26 +9,26 @@
   },
   {
     "level_id": 2,
-    "phrase": "anăca",
+    "phrase": "anh",
     "word1": "an",
-    "word2": "cană",
+    "word2": "han",
     "word3": "",
     "word4": ""
   },
   {
     "level_id": 3,
-    "phrase": "arse",
-    "word1": "ars",
-    "word2": "sar",
-    "word3": "sare",
+    "phrase": "cim",
+    "word1": "ci",
+    "word2": "mic",
+    "word3": "",
     "word4": ""
   },
   {
     "level_id": 4,
-    "phrase": "csaă",
+    "phrase": "csaa",
     "word1": "ac",
     "word2": "sac",
-    "word3": "casă",
+    "word3": "",
     "word4": ""
   },
   {
@@ -41,10 +41,10 @@
   },
   {
     "level_id": 6,
-    "phrase": "mctcio",
-    "word1": "om",
-    "word2": "mic",
-    "word3": "comic",
+    "phrase": "elud",
+    "word1": "el",
+    "word2": "ud",
+    "word3": "leu",
     "word4": ""
   },
   {
@@ -57,10 +57,10 @@
   },
   {
     "level_id": 8,
-    "phrase": "acrbă",
-    "word1": "ar",
-    "word2": "arcă",
-    "word3": "barcă",
+    "phrase": "acl",
+    "word1": "ac",
+    "word2": "la",
+    "word3": "lac",
     "word4": ""
   },
   {
@@ -73,34 +73,34 @@
   },
   {
     "level_id": 10,
-    "phrase": "ecomnuro",
-    "word1": "eu",
-    "word2": "enorm",
-    "word3": "econom",
-    "word4": ""
+    "phrase": "ziare",
+    "word1": "zi",
+    "word2": "ia",
+    "word3": "iaz",
+    "word4": "zare"
   },
   {
     "level_id": 11,
-    "phrase": "aert",
-    "word1": "aer",
-    "word2": "tare",
-    "word3": "rate",
+    "phrase": "tunr",
+    "word1": "tu",
+    "word2": "unt",
+    "word3": "turn",
     "word4": ""
   },
   {
     "level_id": 12,
     "phrase": "unbne",
-    "word1": "nun",
-    "word2": "bun",
+    "word1": "bun",
+    "word2": "bune",
     "word3": "nebun",
     "word4": ""
   },
   {
     "level_id": 13,
     "phrase": "rucae",
-    "word1": "acru",
-    "word2": "rac",
-    "word3": "are",
+    "word1": "rac",
+    "word2": "are",
+    "word3": "acru",
     "word4": "care"
   },
   {
@@ -113,42 +113,42 @@
   },
   {
     "level_id": 15,
-    "phrase": "iunțădev",
-    "word1": "unde",
-    "word2": "undeva",
-    "word3": "undiță",
+    "phrase": "măor",
+    "word1": "mă",
+    "word2": "om",
+    "word3": "oră",
     "word4": ""
   },
   {
     "level_id": 16,
-    "phrase": "aebat",
-    "word1": "beat",
-    "word2": "bate",
-    "word3": "abate",
-    "word4": ""
+    "phrase": "conr",
+    "word1": "con",
+    "word2": "cor",
+    "word3": "nor",
+    "word4": "corn"
   },
   {
     "level_id": 17,
-    "phrase": "hosau",
-    "word1": "haos",
-    "word2": "sau",
-    "word3": "",
+    "phrase": "iarsu",
+    "word1": "sau",
+    "word2": "urs",
+    "word3": "rusia",
     "word4": ""
   },
   {
     "level_id": 18,
-    "phrase": "arpbiol",
-    "word1": "ar",
-    "word2": "par",
-    "word3": "polar",
-    "word4": "bipolar"
+    "phrase": "ceia",
+    "word1": "ci",
+    "word2": "cei",
+    "word3": "ceai",
+    "word4": ""
   },
   {
     "level_id": 19,
-    "phrase": "ceusden",
-    "word1": "sec",
-    "word2": "secunde",
-    "word3": "secund",
+    "phrase": "ațărn",
+    "word1": "ață",
+    "word2": "rană",
+    "word3": "rață",
     "word4": ""
   },
   {
@@ -169,10 +169,10 @@
   },
   {
     "level_id": 22,
-    "phrase": "astacăn",
-    "word1": "acasă",
-    "word2": "tanc",
-    "word3": "atac",
+    "phrase": "rozea",
+    "word1": "ea",
+    "word2": "orez",
+    "word3": "zero",
     "word4": ""
   },
   {
@@ -203,8 +203,8 @@
     "level_id": 26,
     "phrase": "săupn",
     "word1": "său",
-    "word2": "păun",
-    "word3": "supă",
+    "word2": "supă",
+    "word3": "păun",
     "word4": ""
   },
   {
@@ -225,19 +225,19 @@
   },
   {
     "level_id": 29,
-    "phrase": "arcu",
-    "word1": "arc",
-    "word2": "aur",
-    "word3": "acru",
+    "phrase": "euntr",
+    "word1": "un",
+    "word2": "nu",
+    "word3": "tren",
     "word4": ""
   },
   {
     "level_id": 30,
-    "phrase": "măorf",
-    "word1": "om",
-    "word2": "măr",
-    "word3": "oră",
-    "word4": "formă"
+    "phrase": "darjg",
+    "word1": "da",
+    "word2": "jar",
+    "word3": "gard",
+    "word4": ""
   },
   {
     "level_id": 31,
@@ -273,19 +273,19 @@
   },
   {
     "level_id": 35,
-    "phrase": "tsine",
+    "phrase": "tsie",
     "word1": "est",
-    "word2": "test",
-    "word3": "tei",
-    "word4": "tenis"
+    "word2": "tei",
+    "word3": "test",
+    "word4": ""
   },
   {
     "level_id": 36,
     "phrase": "mrgena",
     "word1": "ger",
-    "word2": "mag",
+    "word2": "gram",
     "word3": "german",
-    "word4": "gram"
+    "word4": ""
   },
   {
     "level_id": 37,
@@ -293,55 +293,55 @@
     "word1": "nu",
     "word2": "un",
     "word3": "nucă",
-    "word4": "muncă"
+    "word4": ""
   },
   {
     "level_id": 38,
-    "phrase": "nascăr",
-    "word1": "risc",
+    "phrase": "nascri",
+    "word1": "as",
     "word2": "nas",
-    "word3": "sărac",
-    "word4": "sarcină"
+    "word3": "risc",
+    "word4": ""
   },
   {
     "level_id": 39,
-    "phrase": "rartom",
-    "word1": "rar",
-    "word2": "atom",
-    "word3": "martor",
-    "word4": "mortar"
+    "phrase": "aerpt",
+    "word1": "aer",
+    "word2": "era",
+    "word3": "prea",
+    "word4": "tare"
   },
   {
     "level_id": 40,
-    "phrase": "satmae",
-    "word1": "sat",
-    "word2": "masă",
-    "word3": "stemă",
-    "word4": "teamă"
+    "phrase": "văraz",
+    "word1": "văr",
+    "word2": "vară",
+    "word3": "rază",
+    "word4": ""
   },
   {
     "level_id": 41,
     "phrase": "asec",
     "word1": "sec",
-    "word2": "case",
-    "word3": "ace",
+    "word2": "ace",
+    "word3": "case",
     "word4": "ceas"
   },
   {
     "level_id": 42,
     "phrase": "doimeel",
-    "word1": "doi",
-    "word2": "mie",
-    "word3": "molid",
+    "word1": "oi",
+    "word2": "doi",
+    "word3": "mie",
     "word4": "melodie"
   },
   {
     "level_id": 43,
     "phrase": "vacelra",
     "word1": "ceva",
-    "word2": "clar",
-    "word3": "real",
-    "word4": "areal"
+    "word2": "real",
+    "word3": "areal",
+    "word4": ""
   },
   {
     "level_id": 44,
@@ -349,23 +349,23 @@
     "word1": "din",
     "word2": "noi",
     "word3": "nord",
-    "word4": "ordin"
+    "word4": ""
   },
   {
     "level_id": 45,
-    "phrase": "mapălt",
-    "word1": "palmă",
-    "word2": "plată",
-    "word3": "talpă",
-    "word4": "plat"
+    "phrase": "lanso",
+    "word1": "lan",
+    "word2": "sol",
+    "word3": "salon",
+    "word4": ""
   },
   {
     "level_id": 46,
     "phrase": "artup",
     "word1": "apt",
-    "word2": "taur",
+    "word2": "pat",
     "word3": "patru",
-    "word4": "pat"
+    "word4": ""
   },
   {
     "level_id": 47,
@@ -377,19 +377,19 @@
   },
   {
     "level_id": 48,
-    "phrase": "lâmiceă",
-    "word1": "milă",
-    "word2": "climă",
-    "word3": "lămâie",
-    "word4": ""
+    "phrase": "zidar",
+    "word1": "iar",
+    "word2": "dar",
+    "word3": "zid",
+    "word4": "ziar"
   },
   {
     "level_id": 49,
-    "phrase": "claăse",
-    "word1": "lesă",
-    "word2": "lasă",
-    "word3": "sală",
-    "word4": "clasă"
+    "phrase": "claăs",
+    "word1": "las",
+    "word2": "sală",
+    "word3": "clasă",
+    "word4": ""
   },
   {
     "level_id": 50,

@@ -3,6 +3,6 @@
         <string name="level">Nivel %d</string>
 
         <!--Admob Test ads replace with live ids-->
-        <string name="adMob_application_id">ca-app-pub-3940256099942544~3347511713</string>
-        <string name="admob_interstitial_ad">ca-app-pub-3940256099942544/1033173712</string>
+        <string name="adMob_application_id">ca-app-pub-8933527043626437~5324850422</string>
+        <string name="admob_interstitial_ad">ca-app-pub-8933527043626437/7156806849</string>
 </resources>

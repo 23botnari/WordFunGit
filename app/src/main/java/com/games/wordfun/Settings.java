@@ -109,7 +109,7 @@ public class Settings extends Dialog implements View.OnClickListener {
                     }
                 }
                 Intent emailIntent = new Intent(Intent.ACTION_SENDTO, Uri.fromParts(
-                        "mailto", "contact__@gmail.com", null));
+                        "mailto", "studitappsstudio@gmail.com", null));
                 emailIntent.putExtra(android.content.Intent.EXTRA_SUBJECT, "Word Fun");
 
                 try {

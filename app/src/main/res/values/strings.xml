@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Joc de Cuvinte</string>
+    <string name="app_name">WordFun - Joc de Cuvinte</string>
         <string name="level">Nivel %d</string>
 
         <!--Admob Test ads replace with live ids-->

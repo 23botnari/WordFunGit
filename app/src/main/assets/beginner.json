@@ -12,7 +12,7 @@
     "phrase": "anăca",
     "word1": "an",
     "word2": "cană",
-    "word3": "ana",
+    "word3": "",
     "word4": ""
   },
   {
@@ -35,23 +35,23 @@
     "level_id": 5,
     "phrase": "cuos",
     "word1": "cu",
-    "word2": "suc",
-    "word3": "os",
+    "word2": "os",
+    "word3": "suc",
     "word4": ""
   },
   {
     "level_id": 6,
     "phrase": "mctcio",
     "word1": "om",
-    "word2": "comic",
-    "word3": "omit",
+    "word2": "mic",
+    "word3": "comic",
     "word4": ""
   },
   {
     "level_id": 7,
     "phrase": "roeu",
-    "word1": "ou",
-    "word2": "ore",
+    "word1": "eu",
+    "word2": "ou",
     "word3": "erou",
     "word4": ""
   },
@@ -59,7 +59,7 @@
     "level_id": 8,
     "phrase": "acrbă",
     "word1": "ar",
-    "word2": "crab",
+    "word2": "arcă",
     "word3": "barcă",
     "word4": ""
   },

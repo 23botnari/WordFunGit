@@ -8,6 +8,7 @@
         android:height="20dp" />
     <gradient
         android:angle="90"
-        android:endColor="@color/trans_white"
-        android:startColor="@color/trans_white" />
+        android:endColor="#309f9f9f"
+        android:startColor="#30f9f9f9" />
+        android:opacity="0.1"
 </shape>

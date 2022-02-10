@@ -4,5 +4,5 @@
 
         <!--Admob Test ads replace with live ids-->
         <string name="adMob_application_id">ca-app-pub-8933527043626437~5324850422</string>
-        <string name="admob_interstitial_ad">ca-app-pub-8933527043626437/7156806849</string>
+        <string name="admob_interstitial_ad">ca-app-pub-8933527043626437/3582192219</string>
 </resources>

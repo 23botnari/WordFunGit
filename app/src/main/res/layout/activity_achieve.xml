@@ -60,7 +60,7 @@
                             android:layout_marginBottom="10dp"
                             android:fontFamily="@font/baloo_chettan"
                             android:gravity="center"
-                            android:text="Beginner"
+                            android:text="Începător"
                             android:textColor="@color/yellow"
                             android:textSize="@dimen/txt_setting" />
 
@@ -137,7 +137,7 @@
                             android:layout_marginBottom="10dp"
                             android:fontFamily="@font/baloo_chettan"
                             android:gravity="center"
-                            android:text="Intermediate"
+                            android:text="Intermediar"
                             android:textColor="@color/yellow"
                             android:textSize="@dimen/txt_setting" />
 

@@ -1,5 +1,7 @@
 package com.games.wordfun;
 
+import static com.games.wordfun.R.id.btn_privacy;
+
 import android.app.Dialog;
 import android.content.ActivityNotFoundException;
 import android.content.Context;
@@ -86,7 +88,7 @@ public class Settings extends Dialog implements View.OnClickListener {
 
         findViewById(R.id.btn_rate).setOnClickListener(this);
         findViewById(R.id.btn_contact).setOnClickListener(this);
-        findViewById(R.id.btn_privacy).setOnClickListener(this);
+        findViewById(btn_privacy).setOnClickListener(this);
         findViewById(R.id.btn_close).setOnClickListener(this);
 
     }
@@ -120,14 +122,14 @@ public class Settings extends Dialog implements View.OnClickListener {
                 }
 
                 break;
-            case R.id.btn_privacy:
+            case btn_privacy:
                 if (WApp.getDataStorage().getSound()) {
                     if (mediaPlayer1 != null) {
                         mediaPlayer1.start();
                     }
                 }
 
-                WApp.viewUrl(mcontext,"privacy_policy.html");
+               Toast.makeText(mcontext,"Fii fericit.",Toast.LENGTH_LONG).show();
 
                 break;
             case R.id.btn_close:

@@ -542,20 +542,36 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
     }
 
     public static int type = 0;
-
     public static void textmatcher(final Context context, String s) {
         String w = s;
+
         if (already.contains(w)) {
-            Toast.makeText(context, "Ai rezolvat deja acest cuvânt!", Toast.LENGTH_SHORT).show();
+          final Toast toast = Toast.makeText(context, "Ai rezolvat deja acest cuvânt!",Toast.LENGTH_SHORT);
+                   toast.show();
+          Handler handler = new Handler();
+          handler.postDelayed(new Runnable() {
+              @Override
+              public void run() {
+                  toast.cancel();
+              }
+          },1000);
         } else {
                 if (!gen_words.contains(w)) {
                     type = 1;
-                    Toast.makeText(context, "Cuvânt greșit, Mai încearcă!", Toast.LENGTH_SHORT).show();
+                 final Toast toast = Toast.makeText(context, "Cuvânt greșit, Mai încearcă!", Toast.LENGTH_SHORT);
+                         toast.show();
+                  Handler handler = new Handler();
+                  handler.postDelayed(new Runnable() {
+                      @Override
+                      public void run() {
+                          toast.cancel();
+                      }
+                  },750);
                 }
                 for (int i = 0; i < gen_words.size(); i++) {
                 if (gen_words.get(i).equalsIgnoreCase(w)) {
                     if (type == 0) {
-                        showPopup(i);
+                        //showPopup(i);
                     }
                     type = 0;
                     already.add(s);
@@ -884,7 +900,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
     }
 
 
-    public static void showPopup(int img) {
+   /* public static void showPopup(int img) {
         int gravity = Gravity.CENTER;
 
         int[] images = new int[]{R.drawable.lbl_great, R.drawable.lbl_bravo, R.drawable.lbl_execellent, R.drawable.lbl_amazing};
@@ -942,6 +958,6 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                 popupWindow.dismiss();
             }
         }, 1000);
-    }
+    }*/
 
 }

@@ -10,12 +10,8 @@ import android.media.MediaPlayer;
 import android.net.Uri;
 import android.os.AsyncTask;
 import android.os.Build;
-import android.os.Handler;
-
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.os.Bundle;
+import android.os.Handler;
 import android.util.Log;
 import android.view.Gravity;
 import android.view.LayoutInflater;
@@ -26,12 +22,15 @@ import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
-import android.widget.PopupWindow;
 import android.widget.RelativeLayout;
 import android.widget.SeekBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
+
+import com.games.wordfun.view.CircularLayout;
 import com.google.android.gms.ads.AdError;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.FullScreenContentCallback;
@@ -39,10 +38,12 @@ import com.google.android.gms.ads.LoadAdError;
 import com.google.android.gms.ads.interstitial.InterstitialAd;
 import com.google.android.gms.ads.interstitial.InterstitialAdLoadCallback;
 import com.plattysoft.leonids.ParticleSystem;
-import com.games.wordfun.view.CircularLayout;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.concurrent.Executors;
+import java.util.concurrent.ScheduledExecutorService;
+import java.util.concurrent.TimeUnit;
 
 import nl.dionsegijn.konfetti.KonfettiView;
 import nl.dionsegijn.konfetti.models.Shape;
@@ -73,6 +74,8 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
     private static float[] angle_5 = new float[]{15, -15, 15, -15, 15};
     private static float[] angle_6 = new float[]{15, -15, 15, -15, 15, -15};
 
+    private ScheduledExecutorService scheduler;
+    private boolean isVisible;
     private InterstitialAd mInterstitialAd;
 
     @Override
@@ -103,7 +106,9 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
         findViewById(R.id.btn_achieve).setOnClickListener(this);
         findViewById(R.id.btn_setting).setOnClickListener(this);
         adMobLoad();
+
     }
+//ADMOB RECLAMA
 
     public void adMobLoad(){
         AdRequest adRequest = new AdRequest.Builder().build();
@@ -120,6 +125,8 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                 // Handle the error
                 mInterstitialAd = null;
             }
+
+
         });
     }
     public static void generateNewWord() {
@@ -782,6 +789,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                 }
 
                 if (mInterstitialAd != null) {
+                    mInterstitialAd.show(GameActivity.this);
                     mInterstitialAd.setFullScreenContentCallback(new FullScreenContentCallback(){
                         @Override
                         public void onAdDismissedFullScreenContent() {
@@ -816,6 +824,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                     });
                     mInterstitialAd.show(GameActivity.this);
                 } else {
+
                     Log.d("TAG", "The interstitial ad wasn't ready yet.");
                 }
                 dialog.dismiss();
@@ -864,6 +873,38 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
 
     public static void updateCreadit() {
         txt_credit.setText(WApp.getDataStorage().getCredit() + "");
+    }
+    @Override
+    public void onStart() {
+        super.onStart();
+        isVisible = true;
+        if (scheduler == null) {
+            scheduler = Executors.newSingleThreadScheduledExecutor();
+            scheduler.scheduleAtFixedRate(new Runnable() {
+                public void run() {
+                    Log.i("hello", "world");
+                    runOnUiThread(new Runnable() {
+                        public void run() {
+                            if (isVisible) {
+                                mInterstitialAd.show(GameActivity.this);
+                            } else {
+                                Log.d("TAG", " Interstitial not loaded");
+                            }
+
+                            adMobLoad();
+                        }
+                    });
+                }
+            }, 7, 7, TimeUnit.MINUTES);
+
+        }
+    }
+    @Override
+    protected void onStop() {
+        super.onStop();
+        scheduler.shutdownNow();
+        scheduler = null;
+        isVisible =false;
     }
 
     @Override

@@ -895,7 +895,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                         }
                     });
                 }
-            }, 7, 7, TimeUnit.MINUTES);
+            }, 5, 5, TimeUnit.MINUTES);
 
         }
     }

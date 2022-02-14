@@ -17,15 +17,15 @@
   },
   {
     "level_id": 3,
-    "phrase": "cim",
-    "word1": "ci",
+    "phrase": "cime",
+    "word1": "mie",
     "word2": "mic",
     "word3": "",
     "word4": ""
   },
   {
     "level_id": 4,
-    "phrase": "csaa",
+    "phrase": "csa",
     "word1": "ac",
     "word2": "sac",
     "word3": "",
@@ -41,9 +41,9 @@
   },
   {
     "level_id": 6,
-    "phrase": "elud",
-    "word1": "el",
-    "word2": "ud",
+    "phrase": "elu",
+    "word1": "eu",
+    "word2": "el",
     "word3": "leu",
     "word4": ""
   },
@@ -129,11 +129,11 @@
   },
   {
     "level_id": 17,
-    "phrase": "iarsu",
+    "phrase": "arsu",
     "word1": "sau",
     "word2": "urs",
-    "word3": "rusia",
-    "word4": ""
+    "word3": "rus",
+    "word4": "aur"
   },
   {
     "level_id": 18,
@@ -145,11 +145,11 @@
   },
   {
     "level_id": 19,
-    "phrase": "ațărn",
+    "phrase": "ațărtn",
     "word1": "ață",
     "word2": "rană",
-    "word3": "rață",
-    "word4": ""
+    "word3": "rată",
+    "word4": "rață"
   },
   {
     "level_id": 20,
@@ -205,7 +205,7 @@
     "word1": "său",
     "word2": "supă",
     "word3": "păun",
-    "word4": ""
+    "word4": "săpun"
   },
   {
     "level_id": 27,

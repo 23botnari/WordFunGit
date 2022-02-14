@@ -81,9 +81,9 @@ public class WApp extends Application {
         lst_words3 = new Gson().fromJson(data3, type3);
 
         if (WApp.getDataStorage().isFirst()) {
-            insertCreditToDb(500);
+            insertCreditToDb(200);
             WApp.getDataStorage().setFirst(false);
-            WApp.getDataStorage().setCredit(500);
+            WApp.getDataStorage().setCredit(200);
         }
         MobileAds.initialize(this, new OnInitializationCompleteListener() {
             @Override

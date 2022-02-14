@@ -128,7 +128,7 @@ public class Settings extends Dialog implements View.OnClickListener {
                         mediaPlayer1.start();
                     }
                 }
-
+                WApp.viewUrl(mcontext,"https://docs.google.com/document/d/1EgkAY0DCKtwB6n07ezxgpnVFLThDgI-qrId_MfkvwZY/edit?usp=sharing");
                Toast.makeText(mcontext,"Fii fericit.",Toast.LENGTH_LONG).show();
 
                 break;

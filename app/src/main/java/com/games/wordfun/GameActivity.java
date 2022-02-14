@@ -749,8 +749,8 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
 
                 if (lvl > WApp.getDataStorage().getSetting_Level()) {
                     WApp.getDataStorage().setSetting_Level(lvl);
-                    WApp.getDataStorage().setCredit(WApp.getDataStorage().getCredit() + 20);
-                    new increaseCredits().execute(20);
+                    WApp.getDataStorage().setCredit(WApp.getDataStorage().getCredit() + 10);
+                    new increaseCredits().execute(10);
                 }
 
                 gen_words.clear();

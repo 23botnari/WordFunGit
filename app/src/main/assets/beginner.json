@@ -193,11 +193,11 @@
   },
   {
     "level_id": 25,
-    "phrase": "elud",
-    "word1": "el",
-    "word2": "ud",
-    "word3": "leu",
-    "word4": ""
+    "phrase": "vlniae",
+    "word1": "val",
+    "word2": "vin",
+    "word3": "vale",
+    "word4": "nivel"
   },
   {
     "level_id": 26,
@@ -257,7 +257,7 @@
   },
   {
     "level_id": 33,
-    "phrase": "dpoel",
+    "phrase": "dpoarel",
     "word1": "dop",
     "word2": "pod",
     "word3": "rol",
@@ -273,7 +273,7 @@
   },
   {
     "level_id": 35,
-    "phrase": "tsie",
+    "phrase": "tsiet",
     "word1": "est",
     "word2": "tei",
     "word3": "test",

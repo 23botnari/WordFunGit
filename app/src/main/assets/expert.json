@@ -66,14 +66,14 @@
   {
     "level_id": 109,
     "phrase": "roittvpi",
-    "word1": "viol",
+    "word1": "vip",
     "word2": "viitor",
     "word3": "potrivit",
     "word4": ""
   },
   {
     "level_id": 110,
-    "phrase": "toaăr",
+    "phrase": "toaărt",
     "word1": "tot",
     "word2": "roată",
     "word3": "tort",
@@ -237,7 +237,8 @@
     "phrase": "drunmâ",
     "word1": "drum",
     "word2": "rând",
-    "word3": "mândru"
+    "word3": "mândru",
+    "word4": ""
   },
   {
     "level_id": 131,
